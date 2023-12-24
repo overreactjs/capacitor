@@ -1,0 +1,46 @@
+{
+  "name": "@overreact/capacitor",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/capacitor.umd.cjs",
+  "module": "./dist/capacitor.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/capacitor.js",
+      "require": "./dist/capacitor.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "description": "Wrappers for capacitor functionality, for use with the overreact engine.",
+  "author": "Craig Smith",
+  "license": "MIT",
+  "homepage": "https://overreactjs.github.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/overreactjs/capacitor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/overreactjs/capacitor/issues"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@capacitor/haptics": "^5.0.6",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.6.4"
+  }
+}
